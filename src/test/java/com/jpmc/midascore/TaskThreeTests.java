@@ -24,7 +24,7 @@ public class TaskThreeTests {
     private FileLoader fileLoader;
 
     @Test
-    void task_three_verifier() throws InterruptedException {
+    void task_three_verifier() throws Exception {
         userPopulator.populate();
         String[] transactionLines = fileLoader.loadStrings("/test_data/mnbvcxz.vbnm");
         for (String transactionLine : transactionLines) {

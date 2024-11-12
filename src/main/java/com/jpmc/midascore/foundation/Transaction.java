@@ -7,6 +7,7 @@ public class Transaction {
     private long senderId;
     private long recipientId;
     private float amount;
+    private float incentive;
 
     public Transaction() {
     }
@@ -44,5 +45,13 @@ public class Transaction {
     @Override
     public String toString() {
         return "Transaction {senderId=" + senderId + ", recipientId=" + recipientId + ", amount=" + amount + "}";
+    }
+
+    public void setIncentive(float incentive) {
+        this.incentive = incentive;
+    }
+
+    public float getIncentive() {
+        return incentive;
     }
 }

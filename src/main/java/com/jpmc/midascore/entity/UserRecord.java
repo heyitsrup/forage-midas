@@ -15,8 +15,7 @@ public class UserRecord {
     @Column(nullable = false)
     private float balance;
 
-    protected UserRecord() {
-    }
+    protected UserRecord() {}
 
     public UserRecord(String name, float balance) {
         this.name = name;

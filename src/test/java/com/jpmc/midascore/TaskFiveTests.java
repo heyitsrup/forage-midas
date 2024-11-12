@@ -29,7 +29,7 @@ public class TaskFiveTests {
 
 
     @Test
-    void task_five_verifier() throws InterruptedException {
+    void task_five_verifier() throws Exception {
         userPopulator.populate();
         String[] transactionLines = fileLoader.loadStrings("/test_data/rueiwoqp.tyruei");
         for (String transactionLine : transactionLines) {

@@ -24,7 +24,7 @@ public class TaskFourTests {
     private FileLoader fileLoader;
 
     @Test
-    void task_four_verifier() throws InterruptedException {
+    void task_four_verifier() throws Exception {
         userPopulator.populate();
         String[] transactionLines = fileLoader.loadStrings("/test_data/alskdjfh.fhdjsk");
         for (String transactionLine : transactionLines) {

@@ -2,6 +2,7 @@ package com.jpmc.midascore;
 
 import com.jpmc.midascore.component.DatabaseConduit;
 import com.jpmc.midascore.entity.UserRecord;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -12,6 +13,8 @@ public class UserPopulator {
 
     @Autowired
     private DatabaseConduit databaseConduit;
+
+    // private static final DecimalFormat df = new DecimalFormat("0.00");
 
     public void populate() {
         String[] userLines = fileLoader.loadStrings("/test_data/lkjhgfdsa.hjkl");
